@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-Function</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1><b><center>String-Function</center></b></h1>
+
+    <form method="POST" action="function.php"> 
+        <nav class="navbar navbar-dark bg-dark">
+            <!-- Navbar content -->
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="enter string here.." aria-label="Search">
+              </form>
+          </nav>
+    
+        <!-- <div class="container h-100">
+            <div class="d-flex justify-content-center h-100">
+              <div class="searchbar">
+                <input class="search_input" type="text" name="" placeholder="Search...">
+                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+              </div>
+            </div>
+          </div> -->
+    
+    
+        <!-- <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              Your String=<input class="form-control mr-sm-2" type="search" placeholder="enter string here.." aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav> -->
+        <br>
+        <table class="table table-striped table-dark text-white table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center">CheckBox</th>
+                    <th>Name</th>
+                    <th colspan="2">Description</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center"><input type="checkbox" name="len"></td>
+                    <td>strlen ($str)</td>
+                    <td>This function returns the length of the string or the number of characters in the string including whitespaces.</td>
+                    <td><?php echo $ans; ?></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input type="checkbox" name="rev"></td>
+                    <td>strrev($str)</td>
+                    <td>This function is used to reverse a string.</td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input type="checkbox" name="ucw"></td>
+                    <td>ucwords($str)</td>
+                    <td>This function is used for formatting the string. This function converts first letter/character of every word in the string to uppercase.</td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input type="checkbox" name="strup"></td>
+                    <td>strtoupper($str)</td>
+                    <td>To convert every letter/character of every word of the string to uppercase, one can use strtoupper() method.</td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input type="checkbox" name="strlw"></td>
+                    <td>strtolower($str)</td>
+                    <td>This function is used to convert every letter/character of a string to lowercase.</td>
+                </tr>
+                <tr>
+                    <td class="text-center"><input type="checkbox" name="strwc"></td>
+                    <td>str_word_count($str)</td>
+                    <td>This function returns the number of words in the string. This function comes in handly in form field validation for some simple validations.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <center><button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="genarate">Generate</button></center>
+    </form>
+    
+</body>
+</html>
